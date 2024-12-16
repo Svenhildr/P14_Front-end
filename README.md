@@ -21,7 +21,7 @@ Cette application permet de **créer des employés** et de **visualiser la liste
 1. **Cloner le dépôt :**
 
     ```bash
-    git clone [<URL_DU_DÉPÔT>](https://github.com/Svenhildr/P14_Front-end.git)
+    git clone https://github.com/Svenhildr/P14_Front-end.git
     cd react
     npm install
     npm run dev

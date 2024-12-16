@@ -3,7 +3,7 @@ import { useForm } from "./FormContext";
 import StateSelect from "./StateSelect";
 import { Calendar } from "primereact/calendar";
 import { Link } from "react-router-dom";
-import Modal from "success-modal-hrnet/src/lib/Modalsuccess";
+import { Modal } from "success-modal-hrnet";
 import "../Style/createEmployee.scss";
 
 /**
@@ -61,8 +61,23 @@ const CreateEmployee = () => {
         setIsModalVisible(true);
     };
 
+    const resetForm = () => {
+        setForm({
+            firstName: "",
+            lastName: "",
+            dateOfBirth: null,
+            startDate: null,
+            street: "",
+            city: "",
+            state: "",
+            zipCode: "",
+            department: ""
+        });
+    };
+
     const closeModal = () => {
         setIsModalVisible(false);
+        resetForm();
     };
 
     return (
@@ -84,7 +99,7 @@ const CreateEmployee = () => {
                 <Calendar id="date-of-birth" value={form.dateOfBirth} onChange={(e) => handleDateChange("dateOfBirth", e.value)} showIcon dateFormat="dd/mm/yy" />
 
                 <label htmlFor="start-date">Start Date</label>
-                <Calendar id="start-date" value={form.startDate} onChange={(e) => handleDateChange("startDate", e.value)} showIcon dateFormat="mm/dd/yy" />
+                <Calendar id="start-date" value={form.startDate} onChange={(e) => handleDateChange("startDate", e.value)} showIcon dateFormat="dd/mm/yy" />
 
                 <fieldset className="address">
                     <legend>Address</legend>

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { InputText } from "primereact/inputtext";
-// import { Dropdown } from "primereact/dropdown";
 import "../Style//employeeList.scss";
 
 /**

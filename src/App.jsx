@@ -6,6 +6,8 @@ import EmployeeList from "./components/EmployeeList";
 import "primeicons/primeicons.css";
 import "/node_modules/primeflex/primeflex.css";
 import "primereact/resources/themes/mira/theme.css";
+import "success-modal-hrnet/dist/index.css";
+
 const App = () => {
     return (
         <FormProvider>
