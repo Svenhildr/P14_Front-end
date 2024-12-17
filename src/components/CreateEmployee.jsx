@@ -46,7 +46,6 @@ const CreateEmployee = () => {
      * @param {string} name - The name of the date field (e.g., 'dateOfBirth', 'startDate')
      * @param {Date} value - The selected date value
      */
-
     const handleDateChange = (name, value) => {
         setForm((prevForm) => ({
             ...prevForm,
@@ -54,13 +53,19 @@ const CreateEmployee = () => {
         }));
     };
 
-    //form submit
+    /**
+     * Handles the employee form submission.
+     *
+     * @param {Event} e - The form submission event.
+     * @returns {void}
+     */
     const handleSubmit = (e) => {
         e.preventDefault();
         addEmployee(form);
         setIsModalVisible(true);
     };
 
+    //Resets the employee form to its initial state.
     const resetForm = () => {
         setForm({
             firstName: "",
@@ -75,6 +80,7 @@ const CreateEmployee = () => {
         });
     };
 
+    //Closes the modal
     const closeModal = () => {
         setIsModalVisible(false);
         resetForm();

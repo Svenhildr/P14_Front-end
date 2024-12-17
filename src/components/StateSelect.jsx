@@ -1,3 +1,7 @@
+import React from "react";
+import { Dropdown } from "primereact/dropdown";
+import states from "../data/states";
+
 /**
  * StateSelect Component
  * 
@@ -17,11 +21,6 @@
  * It uses the `states` data, mapping over the array to create an option list for the dropdown, 
  * where each state's name is displayed, and its abbreviation is the value.
  */
-
-import React from "react";
-import { Dropdown } from "primereact/dropdown";
-import states from "../data/states";
-
 const StateSelect = ({ value, onChange }) => {
     return (
         <Dropdown

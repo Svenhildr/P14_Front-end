@@ -22,13 +22,17 @@ import "../Style//employeeList.scss";
  */
 
 const EmployeeList = () => {
+    // custom hook to access the form context
     const { employees } = useForm();
+
     const [globalFilterValue, setGlobalFilterValue] = useState("");
 
+    //state for managing filters
     const [filters, setFilters] = useState({
         global: { value: null, matchMode: "contains" }
     });
 
+    //Handles changes in the global filter input
     const onGlobalFilterChange = (e) => {
         const value = e.target.value;
         let updatedFilters = { ...filters };
@@ -38,6 +42,7 @@ const EmployeeList = () => {
         setGlobalFilterValue(value);
     };
 
+    //Renders the header with search functionality
     const renderHeader = () => {
         return (
             <div className="search-container">
@@ -46,8 +51,6 @@ const EmployeeList = () => {
             </div>
         );
     };
-
-    const header = renderHeader();
 
     return (
         <div className="employee-list-container">
