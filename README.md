@@ -1,6 +1,6 @@
 # 🚀 HRnet Application
 
-Une application de gestion des employés développée avec React, PrimeReact pour l'UI, et une modal de succès personnalisée ! 🏢
+Une application de gestion des employés développée avec React, PrimeReact pour l'UI, et une modale de succès personnalisée ! 🏢
 
 ---
 
@@ -15,13 +15,14 @@ Cette application permet de **créer des employés** et de **visualiser la liste
 -   **React Router** pour la navigation 🧭
 -   **Sass** pour des styles modulaires 💅
 -   **Plugin de modal** personnalisé pour des notifications 🎉
+-   **node.js** v22.11.0
 
 ## ⚙️ Installation
 
 1. **Cloner le dépôt :**
 
     ```bash
-    git clone https://github.com/Svenhildr/P14_Front-end.git
+    git clone [this project](https://github.com/Svenhildr/P14_Front-end.git)
     cd react
     npm install
     npm run dev
@@ -54,4 +55,4 @@ Utilisation du contexte React pour centraliser les données de formulaire et la 
 -   **PrimeReact** : pour une collection de composants UI React.
 -   **React Router** : pour gérer la navigation entre les pages.
 -   **Sass** : pour des styles organisés et modulaires.
--   **success-modal-hrnet** : une modal de succès personnalisée publiée sur npm.
+-   [**success-modal-hrnet**](https://www.npmjs.com/package/success-modal-hrnet) : une modal de succès personnalisée publiée sur npm.
